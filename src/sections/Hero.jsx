@@ -2,6 +2,7 @@ import { ArrowRight, Download, ChevronDown } from "lucide-react";
 import { FaGithub, FaLinkedin, FaXTwitter } from "react-icons/fa6";
 import { Button } from "@/components/Button";
 import { AnimatedBorderButton } from "../components/AnimatedBorderButton";
+import cv from "../assets/cv.pdf";
 
 const skills = [
   "React",
@@ -66,7 +67,7 @@ export const Hero = () => {
             <div className="animate-fade-in">
               <span className="inline-flex items-center gap-2 px-4 py-2 rounded-full glass text-sm text-primary">
                 <span className="w-2 h-2 bg-primary rounded-full animate-pulse" />
-                Software Engineer + Node Specialist
+                Software Engineer
               </span>
             </div>
 
@@ -100,7 +101,11 @@ export const Hero = () => {
 
               <AnimatedBorderButton>
                 <Download className="w-5 h-5" />
-                Download CV
+
+<a href={cv} target="_blank" download>
+  Download CV
+</a>
+                
               </AnimatedBorderButton>
             </div>
 
@@ -135,7 +140,7 @@ export const Hero = () => {
 
               <div className="relative inline-block rounded-3xl overflow-hidden glow-border">
                 <img
-                  src="/profile-photo.jpg"
+                  src="/ami.jpeg"
                   alt="Eyram Gahdi"
                   className="w-80 aspect-[4/5] object-cover rounded-3xl"
                 />
@@ -149,7 +154,7 @@ export const Hero = () => {
               </div>
 
               <div className="absolute -top-4 -left-4 glass rounded-xl px-4 py-3 animate-float animation-delay-500">
-                <div className="text-2xl font-bold text-primary">5+</div>
+                <div className="text-2xl font-bold text-primary">2+</div>
                 <div className="text-xs text-muted-foreground">
                   Years Exp.
                 </div>
